@@ -5,12 +5,17 @@ SQLite file. Run this once (or whenever the cleaned data changes):
 
     python chatbot/build_db.py
 """
-from pathlib import Path
+import sys
 import sqlite3
+from pathlib import Path
+
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
-CLEAN = ROOT / "cleaned_data"
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+from project_paths import CLEANED_DIR, rel
+
+CLEAN = CLEANED_DIR
 DB_PATH = CLEAN / "resume_matching.db"
 
 # table name -> source csv. mirrors the 6 tables in schema.sql
@@ -53,7 +58,7 @@ def build():
     conn.close()
 
     width = max(len(t) for t in counts)
-    print(f"Built {DB_PATH.relative_to(ROOT)}")
+    print(f"Built {rel(DB_PATH)}")
     for table, n in counts.items():
         print(f"  {table:<{width}}  {n:>7,} rows")
     return counts

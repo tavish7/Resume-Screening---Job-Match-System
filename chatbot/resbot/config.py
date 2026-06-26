@@ -1,7 +1,11 @@
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-CLEAN = ROOT / "cleaned_data"
+sys.path.insert(0, str(ROOT))
+from project_paths import CLEANED_DIR, rel
+
+CLEAN = CLEANED_DIR
 
 DB_PATH = CLEAN / "resume_matching.db"
 BEST_MODEL = CLEAN / "models" / "best_model.joblib"

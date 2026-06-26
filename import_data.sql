@@ -1,22 +1,24 @@
 -- Data Import
+-- Run from project root so relative paths resolve, e.g.:
+--   mysql --local-infile=1 -u user -p resume_matching < import_data.sql
 
 -- Disable Foreign Key checks so the import doesn't crash on orphaned records
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- 1. Load Companies
-LOAD DATA LOCAL INFILE 'E:\NCPL\Bootcamp\Project 2\cleaned_data\master\company_master.csv'
+LOAD DATA LOCAL INFILE 'cleaned_data/master/company_master.csv'
 INTO TABLE companies
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 -- 2. Load Candidates
-LOAD DATA LOCAL INFILE 'E:\\NCPL\\Bootcamp\\Project 2\\cleaned_data\\master\\resume_master.csv'
+LOAD DATA LOCAL INFILE 'cleaned_data/master/resume_master.csv'
 INTO TABLE candidates
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 -- 3. Load Jobs
-LOAD DATA LOCAL INFILE 'E:\\NCPL\\Bootcamp\\Project 2\\cleaned_data\\master\\job_master.csv'
+LOAD DATA LOCAL INFILE 'cleaned_data/master/job_master.csv'
 INTO TABLE jobs
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
@@ -26,19 +28,19 @@ SET
     expiry_dt = NULLIF(@expiry, '');
 
 -- 4. Load Matches
-LOAD DATA LOCAL INFILE 'E:\\NCPL\\Bootcamp\\Project 2\\cleaned_data\\matching\\match_scores.csv'
+LOAD DATA LOCAL INFILE 'cleaned_data/matching/match_scores.csv'
 INTO TABLE matches
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 -- 5. Load Job Skills
-LOAD DATA LOCAL INFILE 'E:\\NCPL\\Bootcamp\\Project 2\\cleaned_data\\normalized\\job_skills_resolved.csv'
+LOAD DATA LOCAL INFILE 'cleaned_data/normalized/job_skills_resolved.csv'
 INTO TABLE job_skills
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 -- 6. Load Job Industries
-LOAD DATA LOCAL INFILE 'E:\\NCPL\\Bootcamp\\Project 2\\cleaned_data\\normalized\\job_industries_resolved.csv'
+LOAD DATA LOCAL INFILE 'cleaned_data/normalized/job_industries_resolved.csv'
 INTO TABLE job_industries
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;

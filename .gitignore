@@ -1,4 +1,24 @@
-/Resume Screening & Job-Match System.docx
-/.env
-/Architecture.drawio.png
-/resume_report.pbix
+# Secrets & local env
+.env
+
+# Office / IDE
+~$*
+*.pbix
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Large raw inputs (>100MB — regenerate or download separately)
+Data/postings.csv
+
+# Large derived outputs (run notebooks / build_db.py locally)
+cleaned_data/master/job_master.csv
+cleaned_data/normalized/postings_clean.csv
+cleaned_data/resume_matching.db
+cleaned_data/models/sbert_embeddings.npz
+
+# Optional doc assets (keep local)
+Resume Screening & Job-Match System.docx
+Architecture.drawio.png
