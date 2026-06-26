@@ -4,7 +4,8 @@
 # Office / IDE
 ~$*
 *.pbix
-
+/data_cleaning_and_preprocessing
+/resume_report.pbix
 # Python
 __pycache__/
 *.py[cod]
