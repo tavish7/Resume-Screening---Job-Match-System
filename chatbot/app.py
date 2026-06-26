@@ -3,7 +3,13 @@ from pathlib import Path
 
 import streamlit as st
 
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).parent))
+
+from build_db import ensure_db
+
+ensure_db()
 
 from resbot import db, graph, prompts, resume_ingest
 from resbot.llm import MissingApiKey, ask

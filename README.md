@@ -9,7 +9,7 @@
    - `python chatbot/build_db.py`
    - `streamlit run chatbot/app.py`
 
-**Streamlit Community Cloud:** uses `chatbot/requirements.txt` automatically when main file is `chatbot/app.py`. Set secret `GOOGLE_API_KEY` in the app dashboard.
+**Streamlit Community Cloud:** uses `chatbot/requirements.txt` automatically when main file is `chatbot/app.py`. Set secret `GOOGLE_API_KEY` in the app dashboard. On first boot the app builds `cleaned_data/resume_matching.db` from CSVs in the repo (about 30–60s).
 
 All paths are **relative to the project root** via `project_paths.py` (no machine-specific paths).
 
