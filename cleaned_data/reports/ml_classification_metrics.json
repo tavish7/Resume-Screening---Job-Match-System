@@ -1,0 +1,49 @@
+{
+  "task": "resume_suitability_classification",
+  "n_pairs": 24810,
+  "split": "GroupShuffleSplit by candidate_id, 80/20",
+  "labels": [
+    "Not Suitable",
+    "Suitable",
+    "Highly Suitable"
+  ],
+  "best_model": "XGBoost",
+  "metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.895,
+      "precision_macro": 0.8586,
+      "recall_macro": 0.9189,
+      "f1_macro": 0.8812
+    },
+    "Linear SVM": {
+      "accuracy": 0.8899,
+      "precision_macro": 0.8607,
+      "recall_macro": 0.8998,
+      "f1_macro": 0.8771
+    },
+    "Random Forest": {
+      "accuracy": 0.8857,
+      "precision_macro": 0.8753,
+      "recall_macro": 0.882,
+      "f1_macro": 0.8738
+    },
+    "XGBoost": {
+      "accuracy": 0.9219,
+      "precision_macro": 0.8942,
+      "recall_macro": 0.9277,
+      "f1_macro": 0.909
+    },
+    "Neural Net (features)": {
+      "accuracy": 0.9133,
+      "precision_macro": 0.8776,
+      "recall_macro": 0.9317,
+      "f1_macro": 0.8988
+    },
+    "SBERT + Neural Net": {
+      "accuracy": 0.5425,
+      "precision_macro": 0.5247,
+      "recall_macro": 0.5501,
+      "f1_macro": 0.5122
+    }
+  }
+}

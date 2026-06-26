@@ -1,0 +1,48 @@
+{
+  "row_counts": {
+    "raw::companies/companies.csv": 24473,
+    "raw::companies/company_industries.csv": 24375,
+    "raw::companies/company_specialities.csv": 169387,
+    "raw::companies/employee_counts.csv": 35787,
+    "raw::jobs/benefits.csv": 67943,
+    "raw::jobs/job_industries.csv": 164808,
+    "raw::jobs/job_skills.csv": 213768,
+    "raw::jobs/salaries.csv": 40785,
+    "raw::mappings/industries.csv": 422,
+    "raw::mappings/skills.csv": 35,
+    "raw::postings.csv": 123849,
+    "postings_deduped": 96926,
+    "job_master": 96926,
+    "company_master": 24473
+  },
+  "issues": {
+    "salary_outliers_nulled": 52,
+    "salary_cap_used": 1000000.0,
+    "orphans_salaries": 4712,
+    "orphans_job_skills": 7990,
+    "orphans_job_industries": 5845,
+    "orphans_benefits": 2550,
+    "dup_exact_description": 16334,
+    "dup_partial": 3523,
+    "dup_semantic": 7066
+  },
+  "scores": {
+    "data_quality": 100,
+    "nlp_readiness": 100,
+    "ml_readiness": 99,
+    "matching_readiness": 92
+  },
+  "notes": [
+    "Resume side deferred until resume dataset is provided.",
+    "normalized_salary outliers nulled into normalized_salary_clean; raw kept in salaries_clean.",
+    "Orphan child rows quarantined under cleaned_data/quarantine/."
+  ],
+  "metrics": {
+    "n_jobs": 96926,
+    "title_coverage_pct": 100.0,
+    "description_coverage_pct": 100.0,
+    "experience_coverage_pct": 75.1,
+    "skill_coverage_pct": 98.3,
+    "salary_coverage_pct": 32.1
+  }
+}

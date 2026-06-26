@@ -1,0 +1,33 @@
+{
+  "row_counts": {
+    "raw_resumes": 2484,
+    "resume_master": 2481
+  },
+  "issues": {
+    "emails_found": 19,
+    "phones_found": 77,
+    "dup_resumes_removed": 2,
+    "resumes_quarantined": 1,
+    "low_quality_flagged": 0
+  },
+  "scores": {
+    "data_quality": 100,
+    "nlp_readiness": 100,
+    "skill_extraction_readiness": 97,
+    "matching_readiness": 99
+  },
+  "notes": [
+    "Name not extracted (dataset anonymized; reliable name detection needs NER).",
+    "Contacts mostly scrubbed in source; extracted where present, then removed from text.",
+    "Skills normalized to snake_case to match the job-side vocabulary for downstream matching."
+  ],
+  "metrics": {
+    "n_resumes": 2481,
+    "n_categories": 24,
+    "skill_coverage_pct": 97.3,
+    "education_coverage_pct": 71.3,
+    "experience_coverage_pct": 38.2,
+    "avg_skills_per_resume": 5.82,
+    "avg_completeness": 0.825
+  }
+}

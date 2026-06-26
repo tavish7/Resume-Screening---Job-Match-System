@@ -1,0 +1,36 @@
+skill_abr,skill_name,skill_name_clean
+ART,Art/Creative,art_creative
+DSGN,Design,design
+ADVR,Advertising,advertising
+PRDM,Product Management,product_management
+DIST,Distribution,distribution
+EDU,Education,education
+TRNG,Training,training
+PRJM,Project Management,project_management
+CNSL,Consulting,consulting
+PRCH,Purchasing,purchasing
+SUPL,Supply Chain,supply_chain
+ANLS,Analyst,analyst
+HCPR,Health Care Provider,health_care_provider
+RSCH,Research,research
+SCI,Science,science
+GENB,General Business,general_business
+CUST,Customer Service,customer_service
+STRA,Strategy/Planning,strategy_planning
+FIN,Finance,finance
+OTHR,Other,other
+LGL,Legal,legal
+ENG,Engineering,engineering
+QA,Quality Assurance,quality_assurance
+BD,Business Development,business_development
+IT,Information Technology,information_technology
+ADM,Administrative,administrative
+PROD,Production,production
+MRKT,Marketing,marketing
+PR,Public Relations,public_relations
+WRT,Writing/Editing,writing_editing
+ACCT,Accounting/Auditing,accounting_auditing
+HR,Human Resources,human_resources
+MNFC,Manufacturing,manufacturing
+SALE,Sales,sales
+MGMT,Management,management

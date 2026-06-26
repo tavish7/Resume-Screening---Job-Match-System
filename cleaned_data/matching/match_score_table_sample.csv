@@ -1,0 +1,51 @@
+Candidate,Job Role,Match Score(%),rank,suitability
+3547447,Mortgage Loan Processor,44.7,1,Highly Suitable
+3547447,External Mortgage Loan Originator,36.5,2,Suitable
+3547447,Sr. Homeowners Assistance Counselor,32.3,3,Suitable
+3547447,Mortgage Loan Processor,29.1,4,Suitable
+3547447,Mortgage Loan Officer,29.0,5,Suitable
+3547447,Loan Resolution Coordinator,26.4,6,Suitable
+3547447,Mortgage Underwriter,26.3,7,Suitable
+3547447,Mortgage Loan Processor,25.9,8,Suitable
+3547447,Mortgage Loan Officer,14.1,9,Not Suitable
+3547447,Senior Mortgage Underwriter,13.9,10,Not Suitable
+10001727,Hotel Front Desk Night Auditor,41.6,1,Highly Suitable
+10001727,Banquet Chef,40.6,2,Highly Suitable
+10001727,Front Desk Evening Supervisor - Hotel,40.1,3,Highly Suitable
+10001727,Night Auditor - Part Time,31.2,4,Suitable
+10001727,Front Desk Supervisor,31.1,5,Suitable
+10001727,Sous Chef ,26.4,6,Suitable
+10001727,Sous Chef ,25.3,7,Suitable
+10001727,Banquet Sous Chef,11.0,8,Not Suitable
+10001727,Sous Chef,10.5,9,Not Suitable
+10001727,Sous Chef,9.8,10,Not Suitable
+10005171,MSNBC Public Relations Assistant,40.5,1,Highly Suitable
+10005171,Assistant Director Marketing and Advertising,26.3,2,Suitable
+10005171,Communications Specialist,25.1,3,Suitable
+10005171,Communications Coordinator - School of Integrative Biology,21.6,4,Suitable
+10005171,Public Relations Manager,20.7,5,Suitable
+10005171,Assistant Director for Marketing and Communication - Krannert Art Museum,19.0,6,Not Suitable
+10005171,"Intern-Public Relations, UofL Health, Part time",17.8,7,Not Suitable
+10005171,Marketing and Communications Specialist,15.9,8,Not Suitable
+10005171,Communications Coordinator,15.9,9,Not Suitable
+10005171,Director of Marketing and Communications,15.1,10,Not Suitable
+10030015,LabView Developer ,9.8,1,Not Suitable
+10030015,Electrical Engineer,9.6,2,Not Suitable
+10030015,Design Engineer,9.4,3,Not Suitable
+10030015,Shock and Vibration Laboratory Technician,9.4,4,Not Suitable
+10030015,LabView Developer,9.4,5,Not Suitable
+10030015,Injection Molding Technician,9.3,6,Not Suitable
+10030015,Electrical Technician,9.3,7,Not Suitable
+10030015,"Assembler Technician, 2nd shift",9.2,8,Not Suitable
+10030015,Jr Package Laboratory Technician,9.0,9,Not Suitable
+10030015,Senior/Lead Mechanical Test Engineer,9.0,10,Not Suitable
+10041713,Senior Energy Engineer,26.7,1,Suitable
+10041713,System Engineer,25.3,2,Suitable
+10041713,"Principal, Development Engineer - Hybrid in Western PA",19.1,3,Not Suitable
+10041713,Building Management Systems Engineer,17.8,4,Not Suitable
+10041713,Automation Technical Professional - Alarm Rationalization,11.1,5,Not Suitable
+10041713,BAS Controls Technician,11.0,6,Not Suitable
+10041713,Engineer V,11.0,7,Not Suitable
+10041713,Resource Efficiency Manager - 1927886,10.8,8,Not Suitable
+10041713,Resource Efficiency Manager - 1898182,10.5,9,Not Suitable
+10041713,Instrumentation and Controls Engineer,10.4,10,Not Suitable

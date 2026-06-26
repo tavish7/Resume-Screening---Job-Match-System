@@ -1,0 +1,15 @@
+{
+  "n_candidates_matched": 2481,
+  "n_pairs": 24810,
+  "top_k": 10,
+  "avg_final_match_score": 25.57,
+  "suitability_counts": {
+    "Suitable": 13270,
+    "Not Suitable": 8390,
+    "Highly Suitable": 3150
+  },
+  "weights": {
+    "text": 0.7,
+    "skill": 0.3
+  }
+}
